@@ -722,3 +722,296 @@
   font-size: 15px;
   color: grey;
 }
+
+.page-links-wrapper {
+  display: flex;
+}
+
+.page-links-wrapper a {
+  text-decoration: none;
+  font-size: small;
+  background-color: rgb(236, 233, 233);
+  color: rgb(95, 95, 95);
+  padding: 5px 8px;
+}
+
+.product-gallery {
+  width: 100%;
+  max-width: 600px;
+}
+
+.slider-for {
+  margin-bottom: 15px;
+}
+
+.slider-for img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.slider-nav .slick-slide {
+  margin: 0 5px;
+}
+
+.slider-nav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.slider-nav .slick-current img {
+  border-color: #d4d4d4;
+}
+
+.slider-nav {
+  margin: 0 -5px;
+}
+
+@media (max-width: 576px) {
+  .slider-for img {
+    height: 100%;
+  }
+
+  .slider-nav img {
+    height: 100%;
+  }
+}
+
+.reviews .star i {
+  font-size: small;
+  color: orange;
+  padding: 2px;
+}
+
+.reviw-count p {
+  font-size: small;
+  color: grey;
+}
+
+.selling-price {
+  font-size: large;
+  font-weight: 600;
+}
+
+.price-section-wrpper .price {
+  text-decoration: line-through;
+  color: grey;
+  font-weight: 500;
+}
+
+.stock p i {
+  color: rgb(151, 214, 151);
+}
+
+.stock p {
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.product-discription {
+  text-align: justify;
+  color: rgb(99, 97, 97);
+  font-size: 15px;
+}
+
+.product-sku p {
+  color: gray;
+  font-size: 15px;
+}
+
+.product-qty-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.qty-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  border: 1px solid #ffd3d3;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.qty-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #fff;
+  color: #222;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.qty-btn:hover {
+  background: #f50c0c;
+  color: #fff;
+}
+
+.qty-input {
+  width: 60px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  outline: none;
+}
+
+.qty-input::-webkit-inner-spin-button,
+.qty-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .product-qty-wrapper {
+    gap: 10px;
+  }
+
+  .qty-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .qty-input {
+    width: 50px;
+    font-size: 14px;
+  }
+}
+
+.product-options-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.product-option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.size-options,
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.size-options input,
+.color-options input {
+  display: none;
+}
+
+.size-box {
+  min-width: 0px;
+  height: 40px;
+  padding: 0 18px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-box:hover {
+  border-color: #000;
+  color: #000;
+}
+
+.size-options input:checked + .size-box {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.color-box::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.color-options input:checked + .color-box::after {
+  border-color: #3b3b3b;
+}
+
+.color-box.black {
+  background: #111;
+}
+
+.color-box.red {
+  background: #d62828;
+}
+
+.color-box.blue {
+  background: #2563eb;
+}
+
+.color-box.green {
+  background: #16a34a;
+}
+
+@media (max-width: 576px) {
+  .size-box {
+    min-width: 42px;
+    height: 42px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .color-box {
+    width: 25px;
+    height: 25px;
+  }
+}
