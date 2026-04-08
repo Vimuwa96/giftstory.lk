@@ -1,5 +1,5 @@
 const texts = [
-  "Welcome to GiftStory Online Store",
+  "Welcome to GiftStory Store",
   "Create Your Own Gift Box",
   "Special Gifts for Every Occasion",
   "Unique Surprises for Your Loved Ones",

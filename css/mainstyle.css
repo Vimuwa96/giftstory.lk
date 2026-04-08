@@ -1014,4 +1014,119 @@
     width: 25px;
     height: 25px;
   }
+
+  .logo a img {
+    width: 180px;
+  }
+}
+
+.product-notice {
+  color: gray;
+  font-size: small;
+}
+
+.add-to-card-button button {
+  border: none;
+  background-color: rgb(187, 1, 1);
+  color: white;
+  padding: 10px 19px;
+  border-radius: 5px;
+}
+
+.stock-error-msg p {
+  display: inline;
+  padding: 8px 12px;
+  font-size: small;
+  color: red;
+  background-color: rgb(253, 228, 228);
+  border-radius: 5px;
+}
+
+.share-option span i {
+  color: rgb(6, 64, 255);
+}
+
+.share-option span {
+  font-size: small;
+}
+
+.share-btn {
+  font-size: small;
+  border: none;
+  background-color: #ddfae8;
+  color: #023804;
+  padding: 5px 10px;
+  border: 1px solid green;
+}
+
+#home-tab {
+  color: rgb(2, 2, 2) !important;
+  font-weight: 600;
+}
+
+.nav-item button {
+  color: #818080;
+}
+
+.customer-review-card {
+  max-width: 100%;
+  border: 1px solid rgb(233, 230, 230);
+  border-radius: 8px;
+}
+
+.customer-name p {
+  color: grey;
+  font-size: small;
+}
+.review-content {
+  position: relative;
+}
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 12%;
+}
+
+.review-stars {
+  display: flex;
+  justify-content: center;
+}
+
+.review-stars .star i {
+  color: orange;
+  font-size: small;
+}
+
+.review-stars .star {
+  padding: 1px;
+}
+
+.submit-review p {
+  font-size: medium;
+  font-weight: 500;
+  color: grey;
+}
+
+.input-feild {
+  border: none;
+  border-bottom: 1px solid rgb(235, 232, 232);
+  width: 100%;
+  color: #444242;
+}
+
+.input-feild:focus {
+  border: none;
+  border-bottom: 1px solid rgb(253, 124, 124);
+  outline: none;
+  box-shadow: none;
+}
+
+.review-submit button {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 8px 15px;
 }

@@ -8,6 +8,7 @@
     <!-- CSS Links -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mainstyle.css" />
+    <link rel="stylesheet" href="css/star-rating.css" />
     <!-- Icons -->
     <link
       rel="stylesheet"
@@ -171,12 +172,14 @@
                 </a>
               </div>
             </div>
-            <div class="user-wrapper d-none d-sm-block my-auto">
+            <div
+              class="user-wrapper d-none d-sm-block d-sm-none d-md-block my-auto"
+            >
               <div class="user-icon px-2">
                 <a href=""><i class="bi bi-person h4"></i></a>
               </div>
             </div>
-            <div class="whishlist-wrapper my-auto">
+            <div class="whishlist-wrapper d-none d-sm-block my-auto">
               <div class="whishlist-icon px-2">
                 <a href=""
                   ><i class="bi bi-heart h5"></i><span><sup>1</sup></span></a
@@ -296,7 +299,9 @@
                 <a href=""><i class="bi bi-person h4"></i></a>
               </div>
             </div>
-            <div class="whishlist-wrapper my-auto">
+            <div
+              class="whishlist-wrapper d-none d-sm-block d-sm-none d-md-block my-auto"
+            >
               <div class="whishlist-icon px-2">
                 <a href=""
                   ><i class="bi bi-heart h5"></i><span><sup>1</sup></span></a
@@ -397,126 +402,159 @@
               </div>
 
               <div class="col-md-7 g-4">
-                <div class="product-details-section pt-4">
-                  <div class="product-details">
-                    <div class="product-name">
-                      <h3 class="mb-1">Flowers bouquet pink</h3>
-                    </div>
-                    <div class="reviews d-flex my-auto">
-                      <div class="star my-auto">
-                        <i class="bi bi-star-fill"></i>
+                <form action="">
+                  <div class="product-details-section pt-4">
+                    <div class="product-details">
+                      <div class="product-name">
+                        <h3 class="mb-1">Flowers bouquet pink</h3>
                       </div>
-                      <div class="star my-auto">
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <div class="star my-auto">
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <div class="star my-auto">
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <div class="star my-auto">
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <div class="reviw-count d-flex my-auto px-2">
-                        <p class="my-auto">15 reviews</p>
-                      </div>
-                    </div>
-                    <div class="stock pt-2">
-                      <p><i class="bi bi-check-square-fill"></i> 10 in Stock</p>
-                    </div>
-                    <div class="price-section-wrpper d-flex pt-3">
-                      <div class="selling-price">1050.00 LKR</div>
-                      <div class="price px-3">1250.00 LKR</div>
-                    </div>
-
-                    <div class="product-sku pt-3">
-                      <p class="mb-2">SKU : 00052546-45</p>
-                    </div>
-                    <div class="product-discription">
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Porro laborum deleniti quibusdam, architecto
-                        debitis, quis quia aperiam ratione voluptatem
-                        perspiciatis quo, ipsum reprehenderit atque minima
-                        itaque unde sed dicta illo beatae cum temporibus
-                        blanditiis. Velit ipsam vitae eos debitis aperiam quos,
-                        eveniet quis sequi repudiandae, enim perferendis
-                        mollitia voluptatibus id.
-                      </p>
-                    </div>
-                    <div class="product-qty-wrapper">
-                      <label class="qty-label">QTY</label>
-
-                      <div class="qty-box">
-                        <button type="button" class="qty-btn minus-btn">
-                          −
-                        </button>
-
-                        <input
-                          type="number"
-                          class="qty-input"
-                          value="1"
-                          min="1"
-                          name="qty"
-                        />
-
-                        <button type="button" class="qty-btn plus-btn">
-                          +
-                        </button>
-                      </div>
-                    </div>
-                    <div class="product-options-wrapper">
-                      <div class="product-option-group">
-                        <label class="option-title">Select Size</label>
-
-                        <div class="size-options">
-                          <input type="radio" name="size" id="size-s" checked />
-                          <label for="size-s" class="size-box">S</label>
-
-                          <input type="radio" name="size" id="size-m" />
-                          <label for="size-m" class="size-box">M</label>
-
-                          <input type="radio" name="size" id="size-l" />
-                          <label for="size-l" class="size-box">L</label>
-
-                          <input type="radio" name="size" id="size-xl" />
-                          <label for="size-xl" class="size-box">XL</label>
+                      <div class="reviews d-flex my-auto">
+                        <div class="star my-auto">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="star my-auto">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="star my-auto">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="star my-auto">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="star my-auto">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="reviw-count d-flex my-auto px-2">
+                          <p class="my-auto">15 reviews</p>
                         </div>
                       </div>
+                      <div class="stock pt-2">
+                        <p>
+                          <i class="bi bi-check-square-fill"></i> 10 in Stock
+                        </p>
+                      </div>
+                      <div class="price-section-wrpper d-flex pt-3">
+                        <div class="selling-price">1050.00 LKR</div>
+                        <div class="price px-3">1250.00 LKR</div>
+                      </div>
 
-                      <div class="product-option-group">
-                        <label class="option-title">Select Colour</label>
+                      <div class="product-sku pt-3">
+                        <p class="mb-2">SKU:00052546-45</p>
+                      </div>
+                      <div class="product-discription">
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Porro laborum deleniti quibusdam, architecto
+                          debitis, quis quia aperiam ratione voluptatem
+                          perspiciatis quo, ipsum reprehenderit atque minima
+                          itaque unde sed dicta illo beatae cum temporibus
+                          blanditiis. Velit ipsam vitae eos debitis aperiam
+                          quos, eveniet quis sequi repudiandae, enim perferendis
+                          mollitia voluptatibus id.
+                        </p>
+                      </div>
+                      <div class="stock-error-msg">
+                        <p>Please check the available stock Quantity</p>
+                      </div>
+                      <div class="product-qty-wrapper pt-3">
+                        <label class="qty-label">QTY</label>
 
-                        <div class="color-options">
+                        <div class="qty-box">
+                          <button type="button" class="qty-btn minus-btn">
+                            −
+                          </button>
+
                           <input
-                            type="radio"
-                            name="color"
-                            id="color-black"
-                            checked
+                            type="number"
+                            class="qty-input"
+                            value="1"
+                            min="1"
+                            name="qty"
                           />
-                          <label
-                            for="color-black"
-                            class="color-box black"
-                          ></label>
 
-                          <input type="radio" name="color" id="color-red" />
-                          <label for="color-red" class="color-box red"></label>
+                          <button type="button" class="qty-btn plus-btn">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-options-wrapper">
+                        <div class="product-option-group">
+                          <label class="option-title">Select Size</label>
 
-                          <input type="radio" name="color" id="color-blue" />
-                          <label
-                            for="color-blue"
-                            class="color-box blue"
-                          ></label>
+                          <div class="size-options">
+                            <input
+                              type="radio"
+                              name="size"
+                              id="size-s"
+                              checked
+                            />
+                            <label for="size-s" class="size-box">S</label>
 
-                          <input type="radio" name="color" id="color-green" />
-                          <label
-                            for="color-green"
-                            class="color-box green"
-                          ></label>
+                            <input type="radio" name="size" id="size-m" />
+                            <label for="size-m" class="size-box">M</label>
+
+                            <input type="radio" name="size" id="size-l" />
+                            <label for="size-l" class="size-box">L</label>
+
+                            <input type="radio" name="size" id="size-xl" />
+                            <label for="size-xl" class="size-box">XL</label>
+                          </div>
+                        </div>
+
+                        <div class="product-option-group">
+                          <label class="option-title">Select Colour</label>
+
+                          <div class="color-options">
+                            <input
+                              type="radio"
+                              name="color"
+                              id="color-black"
+                              checked
+                            />
+                            <label
+                              for="color-black"
+                              class="color-box black"
+                            ></label>
+
+                            <input type="radio" name="color" id="color-red" />
+                            <label
+                              for="color-red"
+                              class="color-box red"
+                            ></label>
+
+                            <input type="radio" name="color" id="color-blue" />
+                            <label
+                              for="color-blue"
+                              class="color-box blue"
+                            ></label>
+
+                            <input type="radio" name="color" id="color-green" />
+                            <label
+                              for="color-green"
+                              class="color-box green"
+                            ></label>
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="add-to-card-button pt-4">
+                    <button class="add-to-cart">Add To Cart</button>
+                  </div>
+                  <div class="additional-info pt-3">
+                    <p class="product-notice">
+                      **Actual Products is slitly different with the product
+                      image
+                    </p>
+                  </div>
+                </form>
+                <hr />
+                <div class="share-option d-flex">
+                  <div class="text"><span>Share this product</span></div>
+                  <div class="share-btn-wrapper px-3">
+                    <button class="share-btn" id="copyLinkBtn">
+                      copy link
+                    </button>
                   </div>
                 </div>
               </div>
@@ -524,6 +562,188 @@
           </div>
         </div>
         <!-- PRODUCT SECTION END -->
+
+        <!-- REVIEWS / DESCRIPTION SECTION -->
+        <div class="reviews-section-wrapper pt-4">
+          <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                >
+                  Reviews
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
+                >
+                  Discription
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  More Info
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div class="customer-review-wrapper pt-4">
+                  <div class="row">
+                    <div class="col-md-5 g-4">
+                      <div class="customer-review-card p-4">
+                        <div class="review-content pt-4">
+                          <blockquote
+                            class="mb-1"
+                            style="
+                              font-size: small;
+                              font-style: italic;
+                              color: #555;
+                              border-left: 4px solid #f19393;
+                              padding-left: 15px;
+                              text-align: justify;
+                            "
+                          >
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Voluptates quas est nulla error fugit et
+                            similique debitis cumque dignissimos officia. "
+                          </blockquote>
+                          <div class="quote">
+                            <img
+                              src="images/clip-img/quote.png"
+                              alt="quote"
+                              width="100px"
+                            />
+                          </div>
+                        </div>
+                        <div class="review-stars">
+                          <div class="star my-auto">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <div class="star my-auto">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <div class="star my-auto">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <div class="star my-auto">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                          <div class="star my-auto">
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                        <div
+                          class="customer-name d-flex"
+                          style="justify-content: center"
+                        >
+                          <p>Vimukthi Rupasinghe</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-7 p-4 g-4">
+                      <div class="submit-review">
+                        <p>Add Your Review</p>
+                        <form action="" class="pt-3">
+                          <select class="star-rating" required>
+                            <option value="">Select a rating</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Very Good</option>
+                            <option value="3">Average</option>
+                            <option value="2">Poor</option>
+                            <option value="1">Terrible</option>
+                          </select>
+                          <input
+                            class="input-feild pt-4 mb-4"
+                            type="text"
+                            placeholder="Your Name"
+                            required
+                          />
+                          <input
+                            class="input-feild mb-4"
+                            type="email"
+                            placeholder="Your Email Address"
+                            required
+                          />
+
+                          <textarea
+                            name=""
+                            id=""
+                            class="input-feild mb-2"
+                            type="text"
+                            placeholder="Your Feedback"
+                            required
+                          ></textarea>
+                          <div class="review-submit">
+                            <button type="submit">Submit Review</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact-tab-pane"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="disabled-tab-pane"
+                role="tabpanel"
+                aria-labelledby="disabled-tab"
+                tabindex="0"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- REVIEWS / DESCRIPTION SECTION END-->
       </div>
       <!-- FOOTER  -->
       <hr />
@@ -713,6 +933,31 @@
         let value = parseInt(qtyInput.value) || 1;
         qtyInput.value = value + 1;
       });
+    </script>
+
+    <script>
+      document
+        .getElementById("copyLinkBtn")
+        .addEventListener("click", function () {
+          const currentUrl = window.location.href;
+
+          navigator.clipboard
+            .writeText(currentUrl)
+            .then(() => {
+              this.innerText = "Copied!";
+
+              setTimeout(() => {
+                this.innerText = "Copy Link";
+              }, 10000);
+            })
+            .catch((err) => {
+              console.error("Failed to copy: ", err);
+            });
+        });
+    </script>
+    <script src="js/star-rating.js"></script>
+    <script>
+      var stars = new StarRating(".star-rating");
     </script>
 
     <script src="js/main.js"></script>
